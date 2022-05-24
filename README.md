@@ -1,5 +1,10 @@
 # My eJPT Journey
-I am using this repository to document my learnings as I undertake preparation for the [eLearnSecurity Junior Penetration Tester (eJPT)](https://elearnsecurity.com/product/ejpt-certification/) certification. Training for the eJPT is provided by [INE](https://ine.com), of which eLearnSecurity is a subsidiary. INE stands for InternetNetwork Expert.
+I am using this repository to document my learnings as I undertake preparation for the [eLearnSecurity Junior Penetration Tester (eJPT)](https://elearnsecurity.com/product/ejpt-certification/) certification. 
+
+You can view my progress [here](/labs.md).
+
+# About the eJPT
+Training for the eJPT is provided by [INE](https://ine.com), of which eLearnSecurity is a subsidiary. INE stands for InternetNetwork Expert.
 
 ![](/img/eJPT.png)
 
@@ -10,11 +15,11 @@ The eJPT certification is the first of a series of certifications I intend to ac
 
 I discovered this certification track from the good folks at Reddit in this thread [here](https://www.reddit.com/r/Pentesting/comments/dq7rxn/oscp_vs_gpen_and_gxpen/?utm_source=share&utm_medium=ios_app&utm_name=iossmf). 
 
-Here is an awesome link to a chart outlining all the numerous security certifications and where the eJPT falls into play: [Security Certification Roadmap](https://pauljerimy.com/security-certification-roadmap/). You can see how these certifications lie in the grand scheme of certifications that fall under the **Security Operations** domain:
+Here is an wonderful link to a map of the numerous security certifications and where the eJPT falls into play: [Security Certification Roadmap](https://pauljerimy.com/security-certification-roadmap/). You can see how the certifications I listed above lie in the grand scheme of certifications that fall under the **Security Operations** domain.
 
 ![](/img/track.png)
 
-# INE Training
+# eJPT Topics
 Training for the eJPT starts [here](https://ine.com/learning/certifications/internal/elearnsecurity-junior-penetration-tester) and  consists of four paths:
 1. Penetration Testing Prerequisites
 2. Penetration Testing: Preliminary Skills and Programming
