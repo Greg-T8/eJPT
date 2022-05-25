@@ -14,8 +14,19 @@ The first lab is an introduction to routing. In this lab you are given access to
 
 ## Exploration
 
-| Notes | Screenshot |
-| - | - |
-| Run `ifconfig eth1`<br>- Note IP address for eth1 interface <br>- **ifconfig** doesn't list the default gateway | ![](img/ifconfig.png)|
-| No entries in arp table for **eth1** | ![](img/noarp.png) |
-| Run `route -n` to show routing table<br>- The IP address for the gateway is 10.175.34.1<br>- Under flags:<br>&emsp;U: route is up<br>&emsp;G: gateway<br>- See [here](https://www.cyberciti.biz/faq/how-to-find-out-default-gateway-in-ubuntu/) for more info | ![](img/route-n.png)
+Run `ifconfig eth1`
+- Note IP address for eth1 interface
+- **ifconfig** doesn't list the default gateway
+![](img/ifconfig.png)
+
+No entries in arp table for **eth1**
+![](img/noarp.png)
+
+Run `route -n` to show routing table
+- The IP address for the gateway is 10.175.34.1
+- Flag meanings:
+  - U: route is up
+  - G: gateway<br>
+- See [here](https://www.cyberciti.biz/faq/how-to-find-out-default-gateway-in-ubuntu/) for more info
+
+![](img/route-n.png)
