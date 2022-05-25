@@ -20,11 +20,11 @@ Run `ifconfig eth1`
 
 ![](img/ifconfig.png)
 
-No entries in arp table for **eth1**
+Note, no entries in arp table for **eth1**.
 
 ![](img/noarp.png)
 
-Run `route -n` to show routing table
+Run `route -n` to show routing table.
 
 ![](img/route-n.png)
 
@@ -34,7 +34,7 @@ Run `route -n` to show routing table
   - G: gateway<br>
 - See [here](https://www.cyberciti.biz/faq/how-to-find-out-default-gateway-in-ubuntu/) for more info
 
-Add route to target network
+Add route to target network.
 
 ![](img/routeadd.png)
 
@@ -45,5 +45,3 @@ Confirm route
 Verify ping to hosts
 
 ![](img/verifyping.png)
-
-
