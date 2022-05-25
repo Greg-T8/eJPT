@@ -45,3 +45,16 @@ Confirm route.
 Verify ping to hosts.
 
 ![](img/verifyping.png)
+
+## Learnings
+I used the `route add` command, but you can also use the `ip route add` command.
+
+![](img/iprouteadd.png)
+
+I used `ifconfig` comamnd to display information, but you can also use `ip addr` or `ip a`:
+
+![](img/ipaddr.png)
+
+The same goes for adding routes:
+
+![](img/iproute.png)
