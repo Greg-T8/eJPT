@@ -25,10 +25,11 @@ No entries in arp table for **eth1**
 ![](img/noarp.png)
 
 Run `route -n` to show routing table
+
+![](img/route-n.png)
+
 - The IP address for the gateway is 10.175.34.1
 - Flag meanings:
   - U: route is up
   - G: gateway<br>
 - See [here](https://www.cyberciti.biz/faq/how-to-find-out-default-gateway-in-ubuntu/) for more info
-
-![](img/route-n.png)
