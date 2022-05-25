@@ -33,3 +33,17 @@ Run `route -n` to show routing table
   - U: route is up
   - G: gateway<br>
 - See [here](https://www.cyberciti.biz/faq/how-to-find-out-default-gateway-in-ubuntu/) for more info
+
+Add route to target network
+
+![](img/routeadd.png)
+
+Confirm route
+
+![](img/routeconfirm.png)
+
+Verify ping to hosts
+
+![](img/verifyping.png)
+
+
