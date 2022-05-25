@@ -12,5 +12,9 @@ The first lab is an introduction to routing. In this lab you are given access to
 **Tools**
 - Web browser
 
+## Exploration
 
-
+| Notes | Screenshot |
+| - | - |
+| Run ```ifconfig eth1```<br>Note IP address for eth1 interface <br> **ifconfig** doesn't list the default gateway | ![](img/ifconfig.png)|
+| No entries in arp table for **eth1** | 
