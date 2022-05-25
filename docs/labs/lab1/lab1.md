@@ -20,7 +20,8 @@ Run `ifconfig eth1`
 
 ![](img/ifconfig.png)
 
-No entries in arp table for **eth1** 
+No entries in arp table for **eth1**
+
 ![](img/noarp.png)
 
 Run `route -n` to show routing table
