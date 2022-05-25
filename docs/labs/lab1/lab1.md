@@ -3,7 +3,7 @@ The first lab is an introduction to routing. In this lab you are given access to
 
 **Objective**: Configure the routes on the Kali instance to reach all the hosts in the networks!
 
-![](img/networkdiagram.png)
+<img src="img/networkdiagram.png" width="799"/>
 
 **Instructions**
 - Use **eth1** interface of Kali instance for accessing other hosts in the networks
