@@ -17,9 +17,10 @@ The first lab is an introduction to routing. In this lab you are given access to
 Run `ifconfig eth1`
 - Note IP address for eth1 interface
 - **ifconfig** doesn't list the default gateway
+
 ![](img/ifconfig.png)
 
-No entries in arp table for **eth1**
+No entries in arp table for **eth1** 
 ![](img/noarp.png)
 
 Run `route -n` to show routing table
