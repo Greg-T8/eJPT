@@ -55,6 +55,6 @@ I used `ifconfig` comamnd to display information, but you can also use `ip addr`
 
 ![](img/ipaddr.png)
 
-The same goes for adding routes:
+The same goes for showing routes:
 
 ![](img/iproute.png)
