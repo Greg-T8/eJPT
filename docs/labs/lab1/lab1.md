@@ -38,10 +38,10 @@ Add route to target network.
 
 ![](img/routeadd.png)
 
-Confirm route
+Confirm route.
 
 ![](img/routeconfirm.png)
 
-Verify ping to hosts
+Verify ping to hosts.
 
 ![](img/verifyping.png)
