@@ -14,7 +14,7 @@ The first lab is an introduction to routing. In this lab you are given access to
 
 ## Exploration
 
-Run `ifconfig eth1`
+Run `ifconfig eth1`.
 - Note IP address for eth1 interface
 - **ifconfig** doesn't list the default gateway
 

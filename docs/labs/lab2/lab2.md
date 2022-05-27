@@ -46,7 +46,7 @@ After peaking back at the solution, I discovered you can use **+** in place of *
 
 ![](img/curl4.png)
 
-## Investigating the **tools** Folder
+## Side Track - Exfil.py
 The tools folder contains an interesting Python script, called **exfil.py**. 
 
 ![](img/ls-exfil.png)
@@ -69,6 +69,32 @@ By viewing the README file, you learn that **exfil.py** can be used to pass data
 
 In turn, each of these modules and packages have a number of dependencies, most of which are not available on the host.
 
-You can use a combination of the **cat** command and the redirection operator to copy the modules to the host, but you'll eventually run into a permissions error when trying to copy the **dpkt.py** module, as it is located in a folder, `/usr/local/lib/python2.7` for which the remote shell does not have access. And given the host machine does not have an Internet connection to install the package, this route ended up becoming a dead in, for my case.
+You can use a combination of the **cat** command and the redirection operator to copy the modules to the host, but you'll eventually run into a permissions error when trying to copy the **dpkt.py** module, as it is located in a folder, `/usr/local/lib/python2.7`, for which the remote shell does not have access. And given the host machine does not have an internet connection to install the package, this route ended up becoming a dead in for my case.
 
-However, I feel this tool is valuable, so I'm documenting it here for future use.
+However, I feel this tool is valuable, so I'm documenting it here for future reference.
+
+## Exploration Continued
+Getting back on track, you need to download the payload **flag.zip** to your host machine.  
+
+![](img/curl5.png)
+
+You can't just use the **curl** command on the host, because you're restricted with using the API. So you need to figure out a way to leverage the API to download the file.
+
+I was completely stumped here and had to refer back to the solution.
+
+The solution advises to (1) create a web server on the host using a Python script and (2) use the **curl** command through the remote shell to upload the file to the host. 
+
+Here's how this works...
+
+Verify the existence of the **curl** command on the host:
+
+![](img/curl6.png)
+
+On the host, drop into a Python session and enter `help()`; then type `modules`:
+
+![](img/python1.png)
+
+Note the presence of the **BaseHTTPServer** and **SimpleHTTPServer** modules:
+
+![](img/modules-1.png)
+
