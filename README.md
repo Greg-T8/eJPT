@@ -1,7 +1,7 @@
 # My eJPT Journey
 I am using this repository to document my learnings as I undertake preparation for the [eLearnSecurity Junior Penetration Tester (eJPT)](https://elearnsecurity.com/product/ejpt-certification/) certification. 
 
-You can view my progress [here](/labs.md).
+***Click [here](/labs.md) to view my progress!*** 
 
 # About the eJPT
 Training for the eJPT is provided by [INE](https://ine.com), of which eLearnSecurity is a subsidiary. INE stands for InternetNetwork Expert.
