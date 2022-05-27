@@ -46,7 +46,7 @@ After peaking back at the solution, I discovered you can use **+** in place of *
 
 ![](img/curl4.png)
 
-### Investigating the **tools** folder
+## Investigating the **tools** Folder
 The tools folder contains an interesting Python script, called **exfil.py**. 
 
 ![](img/ls-exfil.png)
