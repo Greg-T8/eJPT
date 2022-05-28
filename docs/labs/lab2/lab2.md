@@ -124,7 +124,7 @@ A few notes about this script:
 
 - The class `BaseHTTPServer.BaseHTTPRequestHandler` parses the HTTP request and calls a method specific to the request type. So if you send the request `SPAM` instead of `GET`, the `do_SPAM()` method will be called.
 
-- The class `BaseHTTPServer.BaseHTTPRequestHandler` defines the inherited attributes, `self.headers` and `self.path`.
+- The class `BaseHTTPServer.BaseHTTPRequestHandler` defines the inherited attributes, `self.headers` and `self.path`. `self.path` represents the request path, not the local path.
 
 - The [`Content-Length`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) entity-header field indicates the transfer length of the message body, in decimal number of OCTECTS. This value is used to read the file from a byte stream for writing to local disk.
 
