@@ -120,9 +120,9 @@ if __name__ == '__main__':
 A few notes about this script:
 - The class `SputHTTPRequestHandler` is a derived class from the class [`SimpleHTTPServer.SimpleHTTPRequestHandler`](https://docs.python.org/2/library/simplehttpserver.html#SimpleHTTPServer.SimpleHTTPRequestHandler). In turn, the class `SimpleHTTPServer.SimpleHTTPRequestHandler` is a derived class from [`BaseHTTPServer.BaseHTTPRequestHandler`](https://docs.python.org/2/library/basehttpserver.html#BaseHTTPServer.BaseHTTPRequestHandler).
 
-- The class `BaseHTTPServer.BaseHTTPRequestHandler` by itself does not process any actual HTTP requests. It must be subclassed to handle each request method.  The class `SimpleHTTPServer.SimpleHTTPRequestHandler` only defines the `do_HEAD()` and `do_GET()` method; it does not define the `do_PUT()` method. Therefore, the script must define the `do_PUT()` method.
+- The class `BaseHTTPServer.BaseHTTPRequestHandler` by itself does not process any actual HTTP requests. It must be subclassed to handle each request method.  The subclass `SimpleHTTPServer.SimpleHTTPRequestHandler` only defines the `do_HEAD()` and `do_GET()` method; it does not define the `do_PUT()` method. Therefore, the script must define the `do_PUT()` method.
 
-- The class `BaseHTTPServer.BaseHTTPRequestHandler` parses the request and calls a method specific to the request type. So if you send the request `SPAM` instead of `GET`, the `do_SPAM()` method will be called.
+- The class `BaseHTTPServer.BaseHTTPRequestHandler` parses the HTTP request and calls a method specific to the request type. So if you send the request `SPAM` instead of `GET`, the `do_SPAM()` method will be called.
 
 - The class `BaseHTTPServer.BaseHTTPRequestHandler` defines the inherited attributes, `self.headers` and `self.path`.
 
