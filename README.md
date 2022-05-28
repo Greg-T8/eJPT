@@ -4,7 +4,7 @@ I am using this repository to document my learnings as I undertake preparation f
 ***--> Click [here](/labs.md) to view my progress!*** 
 
 # About the eJPT
-Training for the eJPT is provided by [INE](https://ine.com), of which eLearnSecurity is a subsidiary. INE stands for InternetNetwork Expert.
+Training for the eJPT is provided by [INE](https://ine.com), of which [eLearnSecurity](https://elearnsecurity.com/) is a subsidiary. INE stands for InternetNetwork Expert.
 
 ![](/img/eJPT.png)
 

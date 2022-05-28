@@ -55,9 +55,9 @@ By noting the presence of the **.git** folder, you determine this tool is associ
 
 ![](img/gitconfig.png)
 
-Documentation for **exfil.py** is available here: https://github.com/averagesecurityguy/exfil
+The Git config file indicates that documentation for **exfil.py** is available here: https://github.com/averagesecurityguy/exfil
 
-By viewing the README file, you learn that **exfil.py** can be used to pass data via covert channels, such as ICMP and DNS Lookup. This tool relies on creating a client-server connection and includes a number of dependent modules and packages:
+By viewing the README file, you learn that **exfil.py** can be used to pass data via covert channels, such as through ICMP and DNS Lookup. This tool relies on creating a client-server connection and includes a number of dependent modules and packages:
 
 - Dependent Packages
   - dnslib
@@ -69,16 +69,16 @@ By viewing the README file, you learn that **exfil.py** can be used to pass data
 
 In turn, each of these modules and packages have a number of dependencies, most of which are not available on the host.
 
-You can use a combination of the **cat** command and the redirection operator to copy the modules to the host, but you'll eventually run into a permissions error when trying to copy the **dpkt.py** module, as it is located in a folder, `/usr/local/lib/python2.7`, for which the remote shell does not have access. And given the host machine does not have an internet connection to install the package, this route ended up becoming a dead in for my case.
+You can use a combination of the **cat** command and the redirection operator to copy the modules to the host, but you'll eventually run into a permissions error when trying to copy the **dpkt.py** module, as it is located in a secure folder, `/usr/local/lib/python2.7`, for which the remote shell does not have access. And given that the host machine does not have an internet connection to install the package, this route ended up becoming a dead in for my case.
 
 However, I feel this tool is valuable, so I'm documenting it here for future reference.
 
 ## Exploration Continued
-Getting back on track, you need to download the payload **flag.zip** to your host machine.  
+Getting back on track, the goal is to download the payload **flag.zip** to your host machine.  
 
 ![](img/curl5.png)
 
-You can't just use the **curl** command on the host, because you're restricted with using the API. So you need to figure out a way to leverage the API to download the file.
+You can't **curl** command from the host because you're restricted with using the **cmd** parameter through the API. So you need to figure out a way to leverage the API to download the file.
 
 I was completely stumped here and had to refer back to the solution.
 
@@ -94,7 +94,42 @@ On the host, drop into a Python session and enter `help()`; then type `modules`:
 
 ![](img/python1.png)
 
-Note the presence of the **BaseHTTPServer** and **SimpleHTTPServer** modules:
+Note the presence of the [**BaseHTTPServer**](https://docs.python.org/2/library/basehttpserver.html) and [**SimpleHTTPServer**](https://docs.python.org/2/library/simplehttpserver.html) modules:
 
 ![](img/modules-1.png)
 
+If you do some searching you'll find the [SimpleHTTPPutServer.py](https://gist.github.com/fabiand/5628006). With this script, you create a web server on the host that enables you to upload a file from the target.
+
+```
+# python -m SimpleHTTPPutServer 8080
+import SimpleHTTPServer
+import BaseHTTPServer
+
+class SputHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
+    def do_PUT(self):
+        print self.headers
+        length = int(self.headers["Content-Length"])
+        path = self.translate_path(self.path)
+        with open(path, "wb") as dst:
+            dst.write(self.rfile.read(length))
+
+
+if __name__ == '__main__':
+    SimpleHTTPServer.test(HandlerClass=SputHTTPRequestHandler)
+```
+A few notes about this script:
+- The class `SputHTTPRequestHandler` is a derived class from the class [`SimpleHTTPServer.SimpleHTTPRequestHandler`](https://docs.python.org/2/library/simplehttpserver.html#SimpleHTTPServer.SimpleHTTPRequestHandler). In turn, the class `SimpleHTTPServer.SimpleHTTPRequestHandler` is a derived class from [`BaseHTTPServer.BaseHTTPRequestHandler`](https://docs.python.org/2/library/basehttpserver.html#BaseHTTPServer.BaseHTTPRequestHandler).
+
+- The class `BaseHTTPServer.BaseHTTPRequestHandler` by itself does not process any actual HTTP requests. It must be subclassed to handle each request method.  The class `SimpleHTTPServer.SimpleHTTPRequestHandler` only defines the `do_HEAD()` and `do_GET()` method; it does not define the `do_PUT()` method. Therefore, the script must define the `do_PUT()` method.
+
+- The class `BaseHTTPServer.BaseHTTPRequestHandler` parses the request and calls a method specific to the request type. So if you send the request `SPAM` instead of `GET`, the `do_SPAM()` method will be called.
+
+- The class `BaseHTTPServer.BaseHTTPRequestHandler` defines the inherited attributes, `self.headers` and `self.path`.
+
+- The [`Content-Length`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) entity-header field indicates the transfer length of the message body, in decimal number of OCTECTS. This value is used to read the file from a byte stream for writing to local disk.
+
+- The instance method `self.translate_path()` is not mentioned in the documentation but is viewable in the source code [here](https://github.com/python/cpython/blob/2.7/Lib/SimpleHTTPServer.py). This method translates the request path to the local filename syntax. It also removes query parameters.
+
+- The built-in function [`open()`](https://docs.python.org/3/library/functions.html#open) opens a file and returns a corresponding file object. In this case, the usage of the function is in the form of `open(file, mode)`, where `file` is a [path-like object](https://docs.python.org/3/glossary.html#term-path-like-object) and `mode` specifies the mode in which the file is opened, in this case `wb` stands for "open for **w**riting and **b**inary mode.
+
+- The method `self.rfile()` derives from the `BaseHTTPServer.BaseHTTPRequestHandler` class and indicates the input stream.
