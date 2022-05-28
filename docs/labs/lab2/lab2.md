@@ -130,6 +130,6 @@ A few notes about this script:
 
 - The instance method `self.translate_path()` is not mentioned in the documentation but is viewable in the source code [here](https://github.com/python/cpython/blob/2.7/Lib/SimpleHTTPServer.py). This method translates the request path to the local filename syntax. It also removes query parameters.
 
-- The built-in function [`open()`](https://docs.python.org/3/library/functions.html#open) opens a file and returns a corresponding file object. In this case, the usage of the function is in the form of `open(file, mode)`, where `file` is a [path-like object](https://docs.python.org/3/glossary.html#term-path-like-object) and `mode` specifies the mode in which the file is opened, in this case `wb` stands for "open for **w**riting and **b**inary mode.
+- The built-in function [`open()`](https://docs.python.org/3/library/functions.html#open) opens a file and returns a corresponding file object. In this case, the usage of the function is in the form of `open(file, mode)`, where `file` is a [path-like object](https://docs.python.org/3/glossary.html#term-path-like-object) and `mode` specifies the mode in which the file is opened, in this case `wb` stands for open for **w**riting and **b**inary mode.
 
 - The method `self.rfile()` derives from the `BaseHTTPServer.BaseHTTPRequestHandler` class and indicates the input stream.
