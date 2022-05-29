@@ -80,11 +80,7 @@ Getting back on track, the goal is to download the payload **flag.zip** to your 
 
 You can't **curl** command from the host because you're restricted with using the **cmd** parameter through the API. So you need to figure out a way to leverage the API to download the file.
 
-I was completely stumped here and had to refer back to the solution.
-
-The solution advises to (1) create a web server on the host using a Python script and (2) use the **curl** command through the remote shell to upload the file to the host. 
-
-Here's how this works...
+I was completely stumped here and had to refer back to the solution. The solution advises to (1) create a web server on the host using a Python script and (2) use the **curl** command through the remote shell to upload the file to the host. Here's how this works...
 
 Verify the existence of the **curl** command on the host:
 
