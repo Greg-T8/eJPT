@@ -2,7 +2,7 @@
 The list that follows is a link to each of the labs as I work through the eJPT certification.
 
 - [x] [Lab 1: Find the Secret Server](/docs/labs/lab1/lab1.md)
-- [ ] [Lab 2: Data Exfiltration](/docs/labs/lab2/lab2.md)
+- [x] [Lab 2: Data Exfiltration](/docs/labs/lab2/lab2.md)
 - [ ] Lab 3: Burpsuite
 - [ ] Lab 4: Burp Suite Basics
 - [ ] Lab 5: Burp Suite #2
