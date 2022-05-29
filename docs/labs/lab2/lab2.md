@@ -140,3 +140,41 @@ Here's a deep dive into the script:
 - The method `self.rfile()` derives from the `BaseHTTPServer.BaseHTTPRequestHandler` class and processes the file's input stream.
 
 - The method `SimpleHTTPServer.test()` creates the web server, assigning the first optional argument as a port number. The Python documentation doesn't mention this method, but you can view the source code [here](https://github.com/python/cpython/blob/2.7/Lib/SimpleHTTPServer.py). The source code specifies the address as `server_address = ('', port)`. From the [socket documentation](https://docs.python.org/3/library/socket.html), the network interface name `''` indicates to receive packets from all network interfaces. 
+
+
+Once you have the script on the server, you'll need to make the script executable by running `chmod 744 server.py`. 
+
+Then run the Python command `python server.py 80` to load up the web server.
+
+![](img/server1.png)
+
+The idea now is to use the `curl` command on the target to upload the `flag.zip` file. 
+
+From the target, you need to know the IP address of the host. On the host, run the command `ip a | grep inet` to get this information. Note the host machine has multiple IP addresses.
+
+![](img/ip1.png)
+
+Use `traceroute` to confirm the IP address from which the target machine communicates.
+
+![](img/traceroute1.png)
+
+Then use the `curl` command with the `--upload-file` option to upload `flag.zip` to the host.
+
+![](img/curl7.png)
+
+The server responds with an accept message.
+
+![](img/server2.png)
+
+Confirm that `flag.zip` now exists on the host.
+
+![](img/flag1.png)
+
+Unzip the file.
+
+![](img/flag2.png)
+
+Finally, retrieve the flag!
+
+![](img/flag3.png)
+
