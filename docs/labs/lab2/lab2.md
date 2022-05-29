@@ -119,7 +119,7 @@ if __name__ == '__main__':
 ```
 Here's a deep dive into the script: 
 
-- You run the script by specifying the module name and a port number, e.g. `python -m SimpleHTTPPutServer.py 8080`.
+- You run the script by specifying the module name and a port number, e.g. `python -m SimpleHTTPPutServer.py 8080`. The script listens for packets on all network interfaces, so you do not need to specify an IP address.
 
 - The class `SputHTTPRequestHandler` derives from [`SimpleHTTPServer.SimpleHTTPRequestHandler`](https://docs.python.org/2/library/simplehttpserver.html#SimpleHTTPServer.SimpleHTTPRequestHandler). 
 
@@ -139,9 +139,4 @@ Here's a deep dive into the script:
 
 - The method `self.rfile()` derives from the `BaseHTTPServer.BaseHTTPRequestHandler` class and processes the file's input stream.
 
-- The method `SimpleHTTPServer.test()` creates the web server, assigning the first optional argument as a port number. The Python documentation doesn't mention this method, but you can view the source code [here](https://github.com/python/cpython/blob/2.7/Lib/SimpleHTTPServer.py). This method creates an HTTP server object that derives from the following path:
-
-```mermaid
-graph TD; 
-  HTTPServer-->TCPServer
-  TCPServer-->BaseServer
+- The method `SimpleHTTPServer.test()` creates the web server, assigning the first optional argument as a port number. The Python documentation doesn't mention this method, but you can view the source code [here](https://github.com/python/cpython/blob/2.7/Lib/SimpleHTTPServer.py). The source code specifies the address as `server_address = ('', port)`. From the [socket documentation](https://docs.python.org/3/library/socket.html), the network interface name `''` indicates to receive packets from all network interfaces. 
