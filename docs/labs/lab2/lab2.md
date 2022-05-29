@@ -98,7 +98,7 @@ Note the presence of the [**BaseHTTPServer**](https://docs.python.org/2/library/
 
 ![](img/modules-1.png)
 
-If you do some searching you'll find the [SimpleHTTPPutServer.py](https://gist.github.com/fabiand/5628006). With this script, you create a web server on the host that enables you to upload a file from the target.
+The solution references the following script that you can use to create a web server on the host and upload a file from the target: [SimpleHTTPPutServer.py](https://gist.github.com/fabiand/5628006). 
 
 ```
 # python -m SimpleHTTPPutServer 8080
@@ -117,19 +117,31 @@ class SputHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     SimpleHTTPServer.test(HandlerClass=SputHTTPRequestHandler)
 ```
-A few notes about this script:
-- The class `SputHTTPRequestHandler` is a derived class from the class [`SimpleHTTPServer.SimpleHTTPRequestHandler`](https://docs.python.org/2/library/simplehttpserver.html#SimpleHTTPServer.SimpleHTTPRequestHandler). In turn, the class `SimpleHTTPServer.SimpleHTTPRequestHandler` is a derived class from [`BaseHTTPServer.BaseHTTPRequestHandler`](https://docs.python.org/2/library/basehttpserver.html#BaseHTTPServer.BaseHTTPRequestHandler).
+Here's a deep dive into the script: 
 
-- The class `BaseHTTPServer.BaseHTTPRequestHandler` by itself does not process any actual HTTP requests. It must be subclassed to handle each request method.  The subclass `SimpleHTTPServer.SimpleHTTPRequestHandler` only defines the `do_HEAD()` and `do_GET()` methods; it does not define the `do_PUT()` method. Therefore, the script must define the `do_PUT()` method.
+- You run the script by specifying the module name and a port number, e.g. `python -m SimpleHTTPPutServer.py 8080`.
+
+- The class `SputHTTPRequestHandler` derives from [`SimpleHTTPServer.SimpleHTTPRequestHandler`](https://docs.python.org/2/library/simplehttpserver.html#SimpleHTTPServer.SimpleHTTPRequestHandler). 
+
+- The class `SimpleHTTPServer.SimpleHTTPRequestHandler` derives from [`BaseHTTPServer.BaseHTTPRequestHandler`](https://docs.python.org/2/library/basehttpserver.html#BaseHTTPServer.BaseHTTPRequestHandler).
+
+- The class `BaseHTTPServer.BaseHTTPRequestHandler` by itself does not process any actual HTTP requests. It must be subclassed to handle each request method.  The subclass `SimpleHTTPServer.SimpleHTTPRequestHandler` only defines the `do_HEAD()` and `do_GET()` methods; it does not define the `do_PUT()` method. This is why the script defines `do_PUT()` method.
 
 - The class `BaseHTTPServer.BaseHTTPRequestHandler` parses the HTTP request and calls a method specific to the request type. So if you send the request `SPAM` instead of `GET`, the `do_SPAM()` method will be called.
 
-- The class `BaseHTTPServer.BaseHTTPRequestHandler` defines the inherited attributes, `self.headers` and `self.path`. `self.path` represents the request path, not the local path.
+- The class `BaseHTTPServer.BaseHTTPRequestHandler` defines the inherited attributes, `self.headers` and `self.path`, which are used in the script. `self.path` represents the request path, not the local path.
 
 - The [`Content-Length`](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html) entity-header field indicates the transfer length of the message body, in decimal number of OCTECTS. This value is used to read the file from a byte stream for writing to local disk.
 
-- The instance method `self.translate_path()` is not mentioned in the documentation but is viewable in the source code [here](https://github.com/python/cpython/blob/2.7/Lib/SimpleHTTPServer.py). This method translates the request path to the local filename syntax. It also removes query parameters.
+- The method `self.translate_path()` is not mentioned in the documentation but is viewable in the source code [here](https://github.com/python/cpython/blob/2.7/Lib/SimpleHTTPServer.py). This method translates the request path to the local filename syntax, removing any query parameters.
 
-- The built-in function [`open()`](https://docs.python.org/3/library/functions.html#open) opens a file and returns a corresponding file object. In this case, the usage of the function is in the form of `open(file, mode)`, where `file` is a [path-like object](https://docs.python.org/3/glossary.html#term-path-like-object) and `mode` specifies the mode in which the file is opened, in this case `wb` stands for open for **w**riting and **b**inary mode.
+- The Python built-in function [`open()`](https://docs.python.org/3/library/functions.html#open) opens a file and returns a corresponding file object. In this case, the usage of the function is in the form of `open(file, mode)`, where `file` is a [path-like object](https://docs.python.org/3/glossary.html#term-path-like-object) and `mode` specifies the mode in which the file is opened, in this case `wb` used in `open(path, wb)` stands for open for **w**riting and **b**inary mode.
 
-- The method `self.rfile()` derives from the `BaseHTTPServer.BaseHTTPRequestHandler` class and indicates the input stream.
+- The method `self.rfile()` derives from the `BaseHTTPServer.BaseHTTPRequestHandler` class and processes the file's input stream.
+
+- The method `SimpleHTTPServer.test()` creates the web server, assigning the first optional argument as a port number. The Python documentation doesn't mention this method, but you can view the source code [here](https://github.com/python/cpython/blob/2.7/Lib/SimpleHTTPServer.py). This method creates an HTTP server object that derives from the following path:
+
+```mermaid
+graph TD; 
+  HTTPServer-->TCPServer
+  TCPServer-->BaseServer
