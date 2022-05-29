@@ -178,3 +178,5 @@ Finally, retrieve the flag!
 
 ![](img/flag3.png)
 
+## Summary
+I really enjoyed this lab. In fact, I would go so far as to say that this is THE lab that confirmed my interest in offensive security techniques.  I learned a lot of useful tricks that I had not seen before, including query strings and leveraging remote shell operations. I also took some time to drill in deep into the Python source code, which furthered my level of understanding on how Python works. I spent over 10 hours on this lab and feel that I came away with a lot more knowledge. 
