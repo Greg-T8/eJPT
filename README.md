@@ -14,6 +14,7 @@ The eJPT certification is the first of a series of certifications I intend to ac
   flowchart TD
     A["eLearnSecurity Junior Penetration Testing (eJPT)"] --> B
     B["eLearnSecurity Certified Professional Penetration Tester (eCPPT)"] --> C
+    C["Offensive Security Certified Professional (OSCP)"T]
 ```
 1. [eJPT eLearnSecurity Junior Penetration Testing `(eJPT`)](https://elearnsecurity.com/product/ejpt-certification/)
 2. [eLearnSecurity Certified Professional Penetration Tester (eCPPT)](https://elearnsecurity.com/product/ecpptv2-certification/)
