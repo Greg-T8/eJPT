@@ -16,9 +16,6 @@ The eJPT certification is the first of a series of certifications I intend to ac
     B["<a href='https://elearnsecurity.com/product/ecpptv2-certification/'>eLearnSecurity Certified Professional Penetration Tester (eCPPT)</a>"] --> C
     C["<a href='https://www.reddit.com/r/Pentesting/comments/dq7rxn/oscp_vs_gpen_and_gxpen/?utm_source=share&utm_medium=ios_app&utm_name=iossmf'>Offensive Security Certified Professional (OSCP)</a>"]
 ```
-1. [eJPT eLearnSecurity Junior Penetration Testing `(eJPT`)](https://elearnsecurity.com/product/ejpt-certification/)
-2. [eLearnSecurity Certified Professional Penetration Tester (eCPPT)](https://elearnsecurity.com/product/ecpptv2-certification/)
-3. [Offensive Security Certified Professional (OSCP)](https://www.offensive-security.com/pwk-oscp/)
 
 I discovered this certification track from the good folks at Reddit from this thread [here](https://www.reddit.com/r/Pentesting/comments/dq7rxn/oscp_vs_gpen_and_gxpen/?utm_source=share&utm_medium=ios_app&utm_name=iossmf). 
 
