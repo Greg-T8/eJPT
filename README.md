@@ -21,7 +21,7 @@ I discovered this certification track from the good folks at Reddit from this th
 
 Here is an wonderful link to a map of numerous security certifications and where the eJPT falls into play: [Security Certification Roadmap](https://pauljerimy.com/security-certification-roadmap/). You can see how the certifications I listed above lie in the grand scheme of certifications that fall under the **Security Operations** domain.
 
-![](/img/track.png)
+![[](/img/track.png)](https://pauljerimy.com/security-certification-roadmap/)
 
 # eJPT Topics
 INE offers training for the eJPT [here](https://ine.com/learning/certifications/internal/elearnsecurity-junior-penetration-tester). The training consists of four parts:
