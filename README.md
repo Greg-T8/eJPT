@@ -14,7 +14,7 @@ The eJPT certification is the first of a series of certifications I intend to ac
   flowchart TD
     A[Start] --> B
     B --> C
-
+```
 1. [eLearnSecurity Junior Penetration Testing (eJPT)](https://elearnsecurity.com/product/ejpt-certification/)
 2. [eLearnSecurity Certified Professional Penetration Tester (eCPPT)](https://elearnsecurity.com/product/ecpptv2-certification/)
 3. [Offensive Security Certified Professional (OSCP)](https://www.offensive-security.com/pwk-oscp/)
