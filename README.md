@@ -13,7 +13,7 @@ The eJPT certification is the first of a series of certifications I intend to ac
 ```mermaid
   flowchart TD
     A["<a href='https://elearnsecurity.com/product/ejpt-certification/'>eLearnSecurity Junior Penetration Testing (eJPT)</a>"] --> B
-    B["eLearnSecurity Certified Professional Penetration Tester (eCPPT)"] --> C
+    B["<a href='https://elearnsecurity.com/product/ecpptv2-certification/'>eLearnSecurity Certified Professional Penetration Tester (eCPPT)</a>"] --> C
     C["Offensive Security Certified Professional (OSCP)"]
 ```
 1. [eJPT eLearnSecurity Junior Penetration Testing `(eJPT`)](https://elearnsecurity.com/product/ejpt-certification/)
