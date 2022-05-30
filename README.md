@@ -12,7 +12,7 @@ The eJPT certification is the first of a series of certifications I intend to ac
 
 ```mermaid
   flowchart TD
-    A[eLearnSecurity Junior Penetration Testing] --> B
+    A[eLearnSecurity Junior Penetration Testing (eJPT)] --> B
     B --> C
 ```
 1. [eJPT eLearnSecurity Junior Penetration Testing eJPT](https://elearnsecurity.com/product/ejpt-certification/)
