@@ -57,6 +57,22 @@ This module includes the following sections:
 
   ![](img/3.2.1-6.png)
 
+  ![](img/3.2.1-7.png)
 
+  ![](img/3.2.1-8.png)
+
+  See https://www.w3.org/TR/uri-clarification/
+
+  ![](img/3.2.1-9.png)
+
+  ![](img/3.2.1-10.png)
+
+  ![](img/3.2.1-11.png)
+
+  ![](img/3.2.1-12.png)
+
+  ![](img/3.2.1-13.png)
+
+  ![](img/3.2.1-14.png)
 
 </details>
