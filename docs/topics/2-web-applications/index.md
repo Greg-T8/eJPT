@@ -21,7 +21,7 @@ This module includes the following sections:
 
 # HTTP Protocol Basics
 <details>
-  <summary>Learn about the fundamentals of HTTP requests</summary>
+  <summary>Learn about the fundamentals of HTTP requests, including the format of an HTTP header.</summary>
 
   ![](img/3.2-1.png)
 
@@ -33,6 +33,14 @@ This module includes the following sections:
 
   ![](img/3.2-5.png)
 
+  See https://hpbn.co/http1x/
+
   ![](img/3.2-6.png)
 
   ![](img/3.2-7.png)
+
+</details>
+
+
+
+# HTTP Requests
