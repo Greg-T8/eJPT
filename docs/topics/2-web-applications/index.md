@@ -1,6 +1,6 @@
 This module includes the following sections:
 
-[ ] Web Application Introduction
+[x] [Web Application Introduction](/docs/topics/2-web-applications/web-app-intro/index.md)
 [ ] HTTP Protocol Basics
 [ ] HTTP Cookies
 [ ] Sessions
