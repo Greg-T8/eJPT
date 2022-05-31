@@ -41,6 +41,13 @@ This module includes the following sections:
 
 </details>
 
-
-
 # HTTP Requests
+<details>
+  <summary>TBD</summary>
+
+  ![](img/3.2.1-1.png)
+
+  ![](img/3.2.1-2.png)
+
+
+</details>
