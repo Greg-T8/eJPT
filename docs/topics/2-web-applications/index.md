@@ -1,14 +1,17 @@
 This module includes the following sections:
 
-- [x] [Web Application Introduction](/docs/topics/2-web-applications/web-app-intro/index.md)
-- [ ] HTTP Protocol Basics
+- [x] Web Application Introduction
+- [x] HTTP Protocol Basics
+- [ ] HTTP Requests
+- [ ] HTTP Responses
+- [ ] HTTPS
 - [ ] HTTP Cookies
 - [ ] Sessions
 - [ ] Same Origin Policy
 - [ ] Burp Suite
 
 
-# Web Application Introduction
+## Web Application Introduction
 <details>
   <summary>Three-slide introduction</summary>
 
@@ -19,7 +22,7 @@ This module includes the following sections:
   ![](img/3.1-3.png)
 </details>
 
-# HTTP Protocol Basics
+## HTTP Protocol Basics
 <details>
   <summary>Learn about the fundamentals of HTTP requests, including the format of an HTTP header.</summary>
 
@@ -45,7 +48,7 @@ This module includes the following sections:
 
 </details>
 
-# HTTP Requests
+## HTTP Requests
 <details>
   <summary>Learn about the components of an HTTP request.</summary>
 
@@ -70,6 +73,8 @@ This module includes the following sections:
   Here is an example of how you can use a Python script to send an HTTP request:
 
   ![](img/3.2-8.png)  
+
+  To end lines in HTTP, you have to use the `\r` (carriage return) and the `\n` (newline) characters. See the previous section for requirements on this.
 
   ![](img/3.2.1-9.png)
 
