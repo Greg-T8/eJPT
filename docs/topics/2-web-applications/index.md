@@ -51,6 +51,12 @@ This module includes the following sections:
 
   ![](img/3.2.1-3.png)
 
+  ![](img/3.2.1-4.png)
+
+  ![](img/3.2.1-5.png)
+
+  ![](img/3.2.1-6.png)
+
 
 
 </details>
