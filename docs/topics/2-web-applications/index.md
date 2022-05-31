@@ -28,3 +28,11 @@ This module includes the following sections:
   ![](img/3.2-2.png)
 
   ![](img/3.2-3.png)
+
+  ![](img/3.2-4.png)
+
+  ![](img/3.2-5.png)
+
+  ![](img/3.2-6.png)
+
+  ![](img/3.2-7.png)
