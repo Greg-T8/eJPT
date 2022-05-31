@@ -39,11 +39,15 @@ This module includes the following sections:
 
   ![](img/3.2-7.png)
 
+  Here is an example of how you can use a Python script to send an HTTP request:
+
+  ![](img/3.2-8.png)  
+
 </details>
 
 # HTTP Requests
 <details>
-  <summary>TBD</summary>
+  <summary>Learn about the components of an HTTP request.</summary>
 
   ![](img/3.2.1-1.png)
 
@@ -62,6 +66,10 @@ This module includes the following sections:
   ![](img/3.2.1-8.png)
 
   See https://www.w3.org/TR/uri-clarification/
+
+  Here is an example of how you can use a Python script to send an HTTP request:
+
+  ![](img/3.2-8.png)  
 
   ![](img/3.2.1-9.png)
 
