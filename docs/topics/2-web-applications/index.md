@@ -1,8 +1,8 @@
 This module includes the following sections:
 
-- [x] Web Application Introduction
-- [x] HTTP Protocol Basics
-- [ ] HTTP Requests
+- [x] [Web Application Introduction](#web-application-introduction)
+- [x] [HTTP Protocol Basics](#http-protocol-basics)
+- [x] [HTTP Requests](#http-requests)
 - [ ] HTTP Responses
 - [ ] HTTPS
 - [ ] HTTP Cookies
