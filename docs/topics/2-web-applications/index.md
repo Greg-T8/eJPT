@@ -89,3 +89,33 @@ This module includes the following sections:
   ![](img/3.2.1-14.png)
 
 </details>
+
+## HTTP Responses
+<details>
+<summary>Understand the components of an HTTP response</summary>
+
+![](img/3.2.2-1.png)
+
+![](img/3.2.2-2.png)
+
+![](img/3.2.2-3.png)
+
+![](img/3.2.2-4.png)
+
+![](img/3.2.2-5.png)
+
+![](img/3.2.2-6.png)
+
+![](img/3.2.2-7.png)
+
+![](img/3.2.2-8.png)
+
+![](img/3.2.2-9.png)
+
+![](img/3.2.2-10.png)
+
+![](img/3.2.2-11.png)
+
+</details>
+
+## HTTPS
