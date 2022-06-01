@@ -3,8 +3,8 @@ This module includes the following sections:
 - [x] [Web Application Introduction](#web-application-introduction)
 - [x] [HTTP Protocol Basics](#http-protocol-basics)
 - [x] [HTTP Requests](#http-requests)
-- [ ] HTTP Responses
-- [ ] HTTPS
+- [x] HTTP Responses
+- [x] HTTPS
 - [ ] HTTP Cookies
 - [ ] Sessions
 - [ ] Same Origin Policy
@@ -126,6 +126,8 @@ References
 - [HTTP Status Code Reference](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
 - [SSL/TLS Strong Encryption: An Introduction](https://httpd.apache.org/docs/2.2/ssl/ssl_intro.html)
 - [HTTP Overview, History, Versions, and Standards](http://www.tcpipguide.com/free/t_HTTPOverviewHistoryVersionsandStandards.htm)
+- [HTTP/1.X](https://hpbn.co/http1x/)
+- [URI](https://www.w3.org/TR/uri-clarification/)
 
 ![](img/3.2.3-1.png)
 
