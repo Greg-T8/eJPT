@@ -119,3 +119,26 @@ This module includes the following sections:
 </details>
 
 ## HTTPS
+
+References
+- [HTTP Status Code Reference](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
+- [SSL/TLS Strong Encryption: An Introduction](https://httpd.apache.org/docs/2.2/ssl/ssl_intro.html)
+- [HTTP Overview, History, Versions, and Standards](http://www.tcpipguide.com/free/t_HTTPOverviewHistoryVersionsandStandards.htm)
+
+![](img/3.2.3-1.png)
+
+![](img/3.2.3-2.png)
+
+![](img/3.2.3-3.png)
+
+![](img/3.2.3-4.png)
+
+![](img/3.2.3-5.png)
+
+![](img/3.2.3-6.png)
+
+![](img/3.2.3-7.png)
+
+![](img/3.2.3-8.png)
+
+![](img/3.2.3-9.png)
