@@ -119,6 +119,8 @@ This module includes the following sections:
 </details>
 
 ## HTTPS
+<details>
+<summary>Learn some general basics around HTTPS. References included</summary>
 
 References
 - [HTTP Status Code Reference](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
@@ -142,3 +144,5 @@ References
 ![](img/3.2.3-8.png)
 
 ![](img/3.2.3-9.png)
+
+</details>
