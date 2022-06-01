@@ -3,8 +3,8 @@ This module includes the following sections:
 - [x] [Web Application Introduction](#web-application-introduction)
 - [x] [HTTP Protocol Basics](#http-protocol-basics)
 - [x] [HTTP Requests](#http-requests)
-- [x] HTTP Responses
-- [x] HTTPS
+- [x] [HTTP Responses](#http-responses)
+- [x] [HTTPS](#https)
 - [ ] HTTP Cookies
 - [ ] Sessions
 - [ ] Same Origin Policy
