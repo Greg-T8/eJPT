@@ -39,13 +39,11 @@ There are many HTTP methods, like
 
 The book [HTTP: The Definitive Guide](https://www.amazon.com/dp/B0043D2EKO/?coliid=I39XHW1A67262P&colid=3QCUW0AS9534O&psc=0&ref_=lv_ov_lig_dp_it) is a highly-recommended resource for learning the basics of HTTP.
 
-Here is another Wireshark capture of visiting www.elearnsecurity.com with the Firefox browser:
+Here is another Wireshark capture from visiting www.elearnsecurity.com with the Firefox browser:
 
 ![](img/1.2-2.png)
 
-The **Host** header field specifies the Internet hostname and port number of the resource being requested. A web server can host multiple websites.  This header field tells the server which site the client is asking for.
-
-The host value is obtained from the [URI](https://www.w3.org/TR/uri-clarification/) of the resource, in the case above the URI is www.elearnsecurity.com.
+The **Host** header field specifies the Internet hostname and port number of the resource being requested. A web server can host multiple websites.  This header field tells the server which site the client is asking for. The host value is obtained from the [URI](https://www.w3.org/TR/uri-clarification/) of the resource, in the case above the URI is www.elearnsecurity.com.
 
 The **User Agent** header field tells the server what client software is issuing the request. It may also reveal to the server the operating system version.
 
