@@ -24,4 +24,9 @@ Here is an example of how you can use a python script to send and HTTP request:
 
 ![](img/1.1-3.png)
 
+## 1.2 HTTP Requests
+HTTP requests consist of a verb, e.g. GET, followed by a path, and the protocol version, e.g. HTTP/1.1.  The path tells the server which resource the browser is asking for. The protocol version tells the server how to communicate with the browser.
 
+Here's an example of a wireshark capture when running the command `apt install chromium-browser`:
+
+![](img/1.2-1.png)
