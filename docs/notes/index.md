@@ -17,3 +17,11 @@ Here's an example of a wireshark trace to www.google.com, showing the initial TC
 The general format of an HTTP message is:
 
 &emsp;![](img/1.1-4.drawio.svg)
+
+To end new lines in HTTP, you have to use the `\r` (carriage return) and the `\n` (newline) characters. 
+
+Here is an example of how you can use a python script to send and HTTP request:
+
+![](img/1.1-3.png)
+
+
