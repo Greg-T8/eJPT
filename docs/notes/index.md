@@ -30,3 +30,17 @@ HTTP requests consist of a verb, e.g. GET, followed by a path, and the protocol 
 Here's an example of a wireshark capture when running the command `apt install chromium-browser`:
 
 ![](img/1.2-1.png)
+
+There are many HTTP methods, like
+- PUT
+- TRACE
+- HEAD
+- POST
+
+The book [HTTP: The Definitive Guide](https://www.amazon.com/dp/B0043D2EKO/?coliid=I39XHW1A67262P&colid=3QCUW0AS9534O&psc=0&ref_=lv_ov_lig_dp_it) is a highly-recommended resource for learning the basics of HTTP.
+
+Here is another Wireshark capture of visiting www.elearnsecurity.com with the Firefox browser:
+
+![](img/1.2-2.png)
+
+The **Host** header field specifies the Internet hostname and port number of the resource being requested. A web server can host multiple websites.  This header field tells the server which site the client is asking for.
