@@ -1,4 +1,4 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="147px" height="141px" viewBox="-0.5 -0.5 147 141" content="&lt;mxfile&gt;&lt;diagram id=&quot;C8fUBoSWPvJC8kDnKJ9X&quot; name=&quot;Page-1&quot;&gt;xZVNc5swEIZ/DcfOCIRJcoXm45JefOhZhjVoIiRGyMHur+8KFhsKaTITp2XGHvHsSqvdd4UCntXHRyua6tkUoIKIFceAfw+iaMMi/PfgNIAw4URKK4uBsQvYyl9AjiM9yAJaYgNyxignmznMjdaQuxkT1ppu7rY3qpiBRpSwANtcqCX9KQtXEQ0ZuxieQJYVhb7dkGEn8pfSmoOmeNpoGCy1GJch17YShekmiN8HPLPGuGFUHzNQvqzzij28YT1v2YJ2H5mQDBNehTpQ1rQvdxrL4DNpyA2sg+Na8cVudGfLLYTnxLBXwNTg7AldxoXuaBPUJ9/iWz6AblL1mJyqScHDmIIJUro8L35JGQeU9XoFokUFnkAUYNtgk1n86UVBemXBTw8DnnaVdLBtRO6tHZ4EZJWrFZmFkqXGsYI97jpt0VHq0hsZvu6Ndg+ilsrnnpmDlWAx2A/AlkiV2IFKz72UGWUsuvXdhFOlUiMKIp4wcRfe+AjOmheYWFj/ULAJ3/cP8je1nWqYrGv4nkTJFRTiyx7939Jcr/h/F/kz0tBxumErhyleKsWvoFS8UOoZ2tZ/ZiOWGrwIvkK3fyTUH+3x5bqF4Zpw/CrC4evliultkyuc3/8G&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="147px" height="141px" viewBox="-0.5 -0.5 147 141" content="&lt;mxfile&gt;&lt;diagram id=&quot;C8fUBoSWPvJC8kDnKJ9X&quot; name=&quot;Page-1&quot;&gt;zVbLcpswFP0alp0BRIi9hSbNounGi65luAZNhESFCHa/vldIvApJO1M7U2aw5XOu7vNg4ZG0On9RtC6fZQ7cC/387JHPXhhG+x1+GuBigSAmoUUKxXKL+RNwYD/BGQ5oy3JoHGYhLSXXrF6CmRQCMr3AqFKyW5qdJM8XQE0LWAGHjPI1+p3lunRo4PsT8QSsKF3o3Z0jjjR7KZRshYsnpADLVHRw40ybkuaym0HkwSOpklLbVXVOgZu2Ljv2+AY7pqxA6L/ZENsNr5S3rmqXl74MbTCV1Gu/LtQrKA3nrXnQ4+BhKgy1ArICrS5oN+zauyScTj5FO2KBbtb1yBmVs4YHkesidZMuRudTybhwVW93INzoQMwxQnKSWCvqhmaWiH+0ZizJ1zZjOUUmlaKRWOTI4Kow309Ac1CNd5cqvMXgEFOxPq3VqtO9ZMDkFSDdlUzDobbRO3zEECt1xR1NOSsErjmcjLMGDZkoDOm73B9pxbhpaipbxUBhsG+AWks4PQJPRpGmkkuFZr1McSvjfIC8kMQ+3Qf3JoJW8gVmjN9fLtgMP/XXWOBcNPEbolmL40+zj68wenKD0f+vM7/eVN9Xz7/M3P0B3Psbj3+0lgC5ggSiG0jgGZrGHC2hn0g8/D5QEB+kgN90d3NBBMGWIshVFIE/p9O252ZvM+ThFw==&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs/>
     <g>
         <rect x="0" y="0" width="146" height="60" rx="9" ry="9" fill="#60a917" stroke="#000000" pointer-events="none"/>
@@ -8,7 +8,9 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 128px; height: 1px; padding-top: 30px; margin-left: 10px;">
                         <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: left;">
                             <div style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                Headers\r\n
+                                <font face="Lucida Console">
+                                    Headers\r\n
+                                </font>
                             </div>
                         </div>
                     </div>
@@ -25,7 +27,9 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 126px; height: 1px; padding-top: 85px; margin-left: 10px;">
                         <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: left;">
                             <div style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                \r\n
+                                <font face="Lucida Console">
+                                    \r\n
+                                </font>
                             </div>
                         </div>
                     </div>
@@ -42,7 +46,9 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 125px; height: 1px; padding-top: 125px; margin-left: 10px;">
                         <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: left;">
                             <div style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                Message Body\r\n
+                                <font face="Lucida Console">
+                                    Message Body\r\n
+                                </font>
                             </div>
                         </div>
                     </div>

@@ -44,3 +44,13 @@ Here is another Wireshark capture of visiting www.elearnsecurity.com with the Fi
 ![](img/1.2-2.png)
 
 The **Host** header field specifies the Internet hostname and port number of the resource being requested. A web server can host multiple websites.  This header field tells the server which site the client is asking for.
+
+The host value is obtained from the [URI](https://www.w3.org/TR/uri-clarification/) of the resource, in the case above the URI is www.elearnsecurity.com.
+
+The **User Agent** header field tells the server what client software is issuing the request. It may also reveal to the server the operating system version.
+
+The browser sends the **Accept** header field to specify which document type it is expecting in the response. Similarly, with **Accept-Language**, the browser can ask for a specific (human) language in the response.
+
+**Accept-Encoding** works similarly to **Accept** but restricts the content encoding, not the content itself.  In this case, the browser accepts two types of compression, gzip and deflate.
+
+The **Connection** header field allows the sender to specify options that are desired for that particular connection. In this case, future connections with the server will reuse the current connection.  
