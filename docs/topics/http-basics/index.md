@@ -5,7 +5,7 @@ To understand web application security, you need to know some web application fu
   - Sessions
   - Same Origin Policy
 
-The book [HTTP: The Definitive Guide](https://www.amazon.com/dp/B0043D2EKO/?coliid=I39XHW1A67262P&colid=3QCUW0AS9534O&psc=0&ref_=lv_ov_lig_dp_it) is a highly-recommended resource for learning the basics of HTTP. I'll be using this book to provide some supplemental knowledge in content that follows.
+The book [HTTP: The Definitive Guide](https://www.amazon.com/dp/B0043D2EKO/?coliid=I39XHW1A67262P&colid=3QCUW0AS9534O&psc=0&ref_=lv_ov_lig_dp_it) is a highly-recommended resource for learning the basics of HTTP. 
 
 # 1.1 HTTP Protocol Basics
 HTTP works on top of the TCP protocol. A TCP connection is first established, and then the client sends its request and waits for the answer. The server processing the request sends back its answer, providing a status code and appropriate data.  
@@ -60,11 +60,6 @@ The browser sends the **Accept** header field to specify which document type it 
 **Accept-Encoding** works similarly to **Accept** but restricts the content encoding, not the content itself.  In this case, the browser accepts two types of compression, gzip and deflate.
 
 The **Connection** header field allows the sender to specify options that are desired for that particular connection. In this case, future connections with the server will reuse the current connection.  
-
-
-
-
-
 
 You can use `netcat` and the `HEAD` method to view only the headers:
 
