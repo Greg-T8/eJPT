@@ -2,9 +2,13 @@
 I am using this repository to document my learnings as I undertake preparation for the [eLearnSecurity Junior Penetration Tester (eJPT)](https://elearnsecurity.com/product/ejpt-certification/) certification. 
 
 ## Content
-I am tracking my progress in the following two areas:
-- [Topics](/topics.md)
-- [Labs](/labs.md)
+I am tracking my learning progress in the following two places:
+- [Topics](/docs/topics/topics.md)
+- [Labs](/docs/labs/labs.md)
+
+The Topics area covers my notes from the course content.  It also contains additional notes from supplemental resources.  
+
+The Labs area covers my experience and learnings as I work through each of the labs.
 
 # About the eJPT
 Training for the eJPT is provided by [INE](https://ine.com), of which [eLearnSecurity](https://elearnsecurity.com/) is a subsidiary. INE stands for InternetNetwork Expert.

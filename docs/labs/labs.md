@@ -1,6 +1,3 @@
-# Topics
-- [ ]
-
 # eJPT Labs
 The list that follows is a link to each of the labs as I work through the eJPT certification.
 
