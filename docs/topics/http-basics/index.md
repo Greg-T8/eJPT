@@ -20,7 +20,7 @@ The general format of an HTTP message as defined by [RFC7230](https://datatracke
 
 &emsp;![](img/1.1-4.drawio.svg)
 
-To end new lines in HTTP, you have to use the `\r` (carriage return) and the `\n` (newline) characters. The HTTP specification refers to carriage return and line feed as `CRLF`.
+To end new lines in HTTP, use the `\r` (carriage return) and the `\n` (newline) characters. The HTTP specification refers to carriage return and line feed as `CRLF`.
 
 Here is an example of how you can use a python script to send and HTTP request:
 
@@ -40,12 +40,12 @@ Here's an example of a Wireshark capture when running the command `apt install c
 ![](img/1.2-1.png)
 
 There are many HTTP methods, like
-- PUT - writes documents to a server in the inverse way that GET reads documents from a server
-- TRACE - trace the message through proxy servers to the server
 - HEAD - send just the HTTP headers from the response for the named resource
+- PUT - writes documents to a server in the inverse way that GET reads documents from a server
 - POST - send client data to a server, i.e. form data for processing by a gateway server
-- OPTIONS - determine what methods can operate on the server
 - DELETE - remove a document from the server
+- TRACE - trace the message through proxy servers to the server
+- OPTIONS - determine what methods can operate on the server
 
 Here is another Wireshark capture from visiting www.elearnsecurity.com with the Firefox browser:
 
