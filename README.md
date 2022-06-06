@@ -28,4 +28,4 @@ I discovered this certification track from the good folks at Reddit from this th
 
 Here is a helpful link to a map of numerous security certifications, showing where the eJPT falls into play: [Security Certification Roadmap](https://pauljerimy.com/security-certification-roadmap/). 
 
-[![](/img/track.png)](https://pauljerimy.com/security-certification-roadmap/)
+&emsp;[![](/img/track.png)](https://pauljerimy.com/security-certification-roadmap/)
