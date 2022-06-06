@@ -1,4 +1,4 @@
-# 1. Web Applications
+# 1. HTTP Protocol
 To understand web application security, you need to know some web application fundamental aspects:
   - HTTP Protocol Basics
   - Cookies
