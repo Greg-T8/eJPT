@@ -10,7 +10,7 @@ The Topics area covers my notes from the course content.  It also contains addit
 
 The Labs area covers my experience and learnings as I work through each of the labs.
 
-# More on the eJPT Topics
+# About the eJPT
 Training for the eJPT is provided by [INE](https://ine.com), of which [eLearnSecurity](https://elearnsecurity.com/) is a subsidiary. INE stands for InternetNetwork Expert.
 
 ![](/img/eJPT.png)

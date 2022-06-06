@@ -1,4 +1,4 @@
-# Topics Reference
+# Links to My Notes
 Use the list below to access my notes for each of the covered topics on the eJPT exam:
 - [HTTP Basics](http-basics/index.md)
 
