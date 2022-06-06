@@ -1,8 +1,8 @@
 # My eJPT Journey
-I am using this repository to document my learnings as I undertake preparation for the [eLearnSecurity Junior Penetration Tester (eJPT)](https://elearnsecurity.com/product/ejpt-certification/) certification. 
+This repository is a capture of my learnings as I undertake preparation for the [eLearnSecurity Junior Penetration Tester (eJPT)](https://elearnsecurity.com/product/ejpt-certification/) certification. 
 
 ## Content
-I am tracking my learning progress in the following two places:
+My knowledge capture from the course content resides in the following two places:
 - [Topics](/docs/topics/topics.md)
 - [Labs](/docs/labs/labs.md)
 
