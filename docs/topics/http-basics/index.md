@@ -6,13 +6,17 @@ To understand web application security, you need to know some web application fu
   - Same Origin Policy
 
 ### References
-- The book [HTTP: The Definitive Guide](https://www.amazon.com/dp/B0043D2EKO/?coliid=I39XHW1A67262P&colid=3QCUW0AS9534O&psc=0&ref_=lv_ov_lig_dp_it) is a highly-recommended resource for learning the basics of HTTP. 
+- [HTTP: The Definitive Guide](https://www.amazon.com/dp/B0043D2EKO/?coliid=I39XHW1A67262P&colid=3QCUW0AS9534O&psc=0&ref_=lv_ov_lig_dp_it) - a highly-recommended resource for learning the basics of HTTP. 
 - [RFC9112 - HTTP/1.1](https://www.rfc-editor.org/rfc/rfc9112.html) - Message format, request line, status line, field syntax, message body
 - [RFC9110 - HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) - URI schemes, fields, methods, authentication, status codes
 - [RFC3986 - URI Generic Syntax](https://www.rfc-editor.org/rfc/rfc3986.html) - describes difference between URI, URL, and URN
 
+{% tip %}
+**Note** Check out [History and Evolution](https://www.rfc-editor.org/rfc/rfc9110.html#section-1.2) to get a quick understanding in the differences between HTTP/1, HTTP/2, and HTTP/3.
+{% endtip %}
+
 # 1.1 HTTP Protocol Basics
-HTTP works on top of the TCP protocol. A TCP connection is first established, and then the client sends its request and waits for the answer. The server processing the request sends back its answer, providing a status code and appropriate data.  
+HTTP works on top of the TCP protocol. A TCP connection is first established, and then the client sends its request and waits for the answer. The server processing the request sends back its answer, providing a status code and appropriate data. 
 
 ![](img/1.1-1.png)  
 Reference: https://hpbn.co/http1x/
@@ -20,7 +24,7 @@ Reference: https://hpbn.co/http1x/
 Here's an example of a wireshark trace to www.google.com, showing the initial TCP connection, followed by the HTTP request:  
 ![](img/1.1-2.png)
 
-The general format of an HTTP message as defined by [RFC7230](https://datatracker.ietf.org/doc/html/rfc7230#section-3) is:
+The general format of an HTTP message as defined by [RFC9112](https://www.rfc-editor.org/rfc/rfc9112.html) is:
 
 &emsp;![](img/1.1-4.drawio.svg)
 
