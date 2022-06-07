@@ -5,7 +5,13 @@ To understand web application security, you need to know some web application fu
   - Sessions
   - Same Origin Policy
 
-The book [HTTP: The Definitive Guide](https://www.amazon.com/dp/B0043D2EKO/?coliid=I39XHW1A67262P&colid=3QCUW0AS9534O&psc=0&ref_=lv_ov_lig_dp_it) is a highly-recommended resource for learning the basics of HTTP. 
+**References**
+- The book [HTTP: The Definitive Guide](https://www.amazon.com/dp/B0043D2EKO/?coliid=I39XHW1A67262P&colid=3QCUW0AS9534O&psc=0&ref_=lv_ov_lig_dp_it) is a highly-recommended resource for learning the basics of HTTP. 
+- [RFC9112 - HTTP/1.1](https://www.rfc-editor.org/rfc/rfc9112.html) - Message format, request line, status line, field syntax, message body
+- [RFC9110 - HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) - URI schemes, fields, methods, authentication, status codes
+- [RFC3986 - URI Generic Syntax](https://www.rfc-editor.org/rfc/rfc3986.html) - describes difference between URI, URL, and URN
+
+
 
 # 1.1 HTTP Protocol Basics
 HTTP works on top of the TCP protocol. A TCP connection is first established, and then the client sends its request and waits for the answer. The server processing the request sends back its answer, providing a status code and appropriate data.  
