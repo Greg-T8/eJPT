@@ -11,10 +11,6 @@ To understand web application security, you need to know some web application fu
 - [RFC9110 - HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) - URI schemes, fields, methods, authentication, status codes
 - [RFC3986 - URI Generic Syntax](https://www.rfc-editor.org/rfc/rfc3986.html) - describes difference between URI, URL, and URN
 
-{% tip %}
-**Note** Check out [History and Evolution](https://www.rfc-editor.org/rfc/rfc9110.html#section-1.2) to get a quick understanding in the differences between HTTP/1, HTTP/2, and HTTP/3.
-{% endtip %}
-
 # 1.1 HTTP Protocol Basics
 HTTP works on top of the TCP protocol. A TCP connection is first established, and then the client sends its request and waits for the answer. The server processing the request sends back its answer, providing a status code and appropriate data. 
 
