@@ -1,6 +1,6 @@
 # Links to My Notes
 Use the list below to access my notes for each of the covered topics on the eJPT exam:
-- [HTTP Basics](http-basics/index.md)
+- [HTTP Basics](https://github.com/Greg-T8/Notebook/blob/main/topics/concepts/http/http-basics/index.md)
 
 # eJPT Topics
 INE offers training for the eJPT [here](https://ine.com/learning/certifications/internal/elearnsecurity-junior-penetration-tester). The training consists of four parts:
